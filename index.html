@@ -8,42 +8,62 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class="darkMode"><button class = "darkTheme" type ="button"><img src="./src/dark-mode-svgrepo-com.svg" alt="darkMode icon" width="35px"></button></li>
-                <li class="soundIcon"><button class = "sound" type="button"><img src="./src/sound-loud-filled-svgrepo-com.svg" alt="Sound icon" width = "35px"></button></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="game-screen">
+        <header>
+            <nav>
+                <ul>
+                    <li class="darkMode">
+                        <button class = "darkTheme" type ="button">
+                            <img src="./src/dark-mode-svgrepo-com.svg" alt="darkMode icon" width="35px">
+                        </button>
+                    </li>
+                    <li class="soundIcon">
+                        <button class = "sound" type="button">
+                            <img src="./src/sound-loud-filled-svgrepo-com.svg" alt="Sound icon" width = "35px">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <div class="score-left">
-            <h2>2</h2>
-            <p>Joueur</p>
-        </div>
-        <div class="wrapper-grid">
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-            <div class="case"></div>
-        </div>
-        <div class="score-right">
-            <h2>2</h2>
-            <p>Bot</p>
-        </div>
-    </main>
+        <main>
+            <div class="score left">
+                <h2>2</h2>
+                <p>Joueur</p>
+            </div>
+            <div class="wrapper-grid">
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+                <div class="case"></div>
+            </div>
+            <div class="score right">
+                <h2>2</h2>
+                <p>Bot</p>
+            </div>
 
-    <div class="bottomButtons">
-        <button class="multi" type="button">Multijoueur</button>
-        <button class="rejouer" type="button">New Game</button>
+            
+        </main>
+
+        <div class="bottomButtons">
+            <button class="multi" type="button">Multijoueur</button>
+            <button class="rejouer" type="button">New Game</button>
+        </div>
     </div>
- 
+    
+    <div class="end-screen">
+        <div class="end-screen-background"></div>
+        <div class="end-screen-container">
+            <h2>Victoire</h2>
+            <button class="rejouer">Rejouer</button>
+        </div>
+    </div>
+    
     <script src="main.js"></script>
 </body>
 </html>

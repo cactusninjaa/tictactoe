@@ -25,10 +25,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    position: relative;
 	line-height: 1;
     width: 100%;
     height: 100vh;
     background-color: black;
+    color: #fff;
 }
 ol, ul {
 	list-style: none;
@@ -52,7 +54,6 @@ nav{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: black;
     align-items: center;
     justify-content: flex-end;
 }
@@ -99,6 +100,7 @@ nav button{
 }
  .rejouer, .multi:hover{
     background-color :white;
+    border: none;
     color: black;
     height: 55px;
     width: 200px;
@@ -109,7 +111,90 @@ nav button{
     font-weight: 600;
 }
 
+.game-screen{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    gap: 100px;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.score p {
+    font-family: sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.left{
+    color: orange;
+}
+.right{
+    color: darkviolet;
+}
 
 
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
 
+.case{
+    background-color: white;
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
 
+.end-screen{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-screen-background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #BDBDBD;
+    opacity: 0.8;
+    
+}
+
+.end-screen-container{
+    position: absolute;
+    background-color: black;
+    width: 400px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
