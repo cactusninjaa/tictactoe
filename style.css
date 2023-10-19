@@ -62,7 +62,6 @@ table {
     }
 }
 
-
 nav{
     display: flex;
     width: 100%;
@@ -129,6 +128,12 @@ nav button{
     height: 100vh;
 }
 
+.white{
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--black);
+}
+
 @media screen and (min-width: 1200px) {
     main{
         padding: 100px;
@@ -188,6 +193,10 @@ nav button{
         height: 172px;
         border-radius: 20px;
     }
+    .black{
+        background-color: var(--black);
+        color: var(--white);
+    }
     
 }
 @media screen and (max-width: 650px){
@@ -204,6 +213,10 @@ nav button{
         width: 140px;
         height: 140px;
         border-radius: 20px;
+    }
+    .black{
+        background-color: var(--black);
+        color: var(--white);
     }
     
 }
@@ -222,6 +235,10 @@ nav button{
         width: 120px;
         height: 120px;
         border-radius: 20px;
+    }
+    .black{
+        background-color: var(--black);
+        color: var(--white);
     }
 
     .bottomButtons {
@@ -248,6 +265,10 @@ nav button{
         width: 100px;
         height: 100px;
         border-radius: 20px;
+    }
+    .black{
+        background-color: var(--black);
+        color: var(--white);
     }
 
 }
