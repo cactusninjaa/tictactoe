@@ -110,7 +110,7 @@ let darkModeButton = document.querySelector('.darkMode');
 darkModeButton.onclick = function() {
     gameScreen = document.querySelector('.game-screen');
     body = document.querySelector('body');
-    caseGrid = document.querySelectorAll('.case');
+    caseGrid = document.querySelectorAll('.cell');
     buttonMulti = document.querySelector('.multi');
     buttonRejouer = document.querySelector('.rejouer');
 
